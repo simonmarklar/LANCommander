@@ -33,7 +33,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '9.0.102'
+          global-json-file: global.json
 
       - name: Restore dependencies
         run: dotnet restore LANCommander.SDK/LANCommander.SDK.csproj
